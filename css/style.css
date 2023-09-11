@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+
+}
+
+nav {
+    background: linear-gradient(180deg, rgb(2, 2, 72) 30%, lightblue 80%);
+    display: flex;
+    justify-content: right;
+    padding: 2px;
+    margin-top: 0;
+    height: 120px;
+}
+
+nav a {
+    color: white;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 10px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+.main-image {
+    border-radius: 50%;
+}
+
+.introduction h2 {
+    color: purple;
+    font-size: 40px;
+    letter-spacing: 6px;
+    font-family: monospace;
+
+}
+
+.content h2 {
+    color: rgb(180, 29, 94);
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 25px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.splash {
+    position: relative;
+    height: 85vh;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.splash h1 {
+    font-family: 'Edu TAS Beginner', cursive;
+    line-height: 100px;
+    font-size: 90px;
+    margin-top: 200px;
+}
+
+.splash h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.content {
+    background-color: lightgreen;
+}
+
+.cloud1 {
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+}
+
+.cloud2 {
+    width: 150px;
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.plane {
+    position: absolute;
+    right: 1500px;
+    height: 150px;
+
+    animation: 3s ease-out 0s 1 slideInFromRight;
+}
+
+
+
+footer {
+    background: linear-gradient(0deg, rgb(2, 2, 72) 50%, lightgreen 80%);
+    display: flex;
+    height: 100px;
+    align-items: last baseline;
+    justify-content: center;
+}
+
+.contact-footer {
+    background: linear-gradient(0deg, rgb(2, 2, 72) 50%, lightblue 80%);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+
+
+a {
+    color: rgb(241, 95, 120);
+    text-decoration: none;
+    transition-duration: .1s;
+    padding: 2px;
+    height: fit-content;
+}
+
+a:hover {
+    background-color: rgb(244, 181, 133);
+    border-radius: 5px;
+
+    color: red;
+}
+
+hr {
+    width: 70%;
+    height: 10px;
+    border-style: dotted;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 10px;
+    color: darkslategrey;
+}
+
+.grass {
+    position: absolute;
+    top: 312px;
+    width: 100%;
+    display: block;
+    height: 400px;
+}
+
+.computer {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 400px;
+    height: 300px;
+}
+
+
+
+.leadership {
+    width: 400px;
+    height: 170px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.soccer {
+    width: 400px;
+    height: 280px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.card {
+    width: 400px;
+    height: 450px;
+    background: rgb(245, 247, 247);
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+    text-align: center;
+    transition-duration: .1s;
+}
+
+.card h3,
+ul,
+dl {
+    margin: 10px 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+}
+
+.card ul {
+    text-align: left;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 40px;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.work {
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+}
+
+dt {
+    margin: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    padding: 30px;
+    height: fit-content;
+    margin: auto;
+
+}
+
+.contact:hover {
+    transform: scale(1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.contact-body {
+    height: 73.5vh;
+    background-color: lightblue;
+}
+
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    margin-bottom: 0;
+}
+
+.contact-body {
+    text-align: center;
+    position: relative;
+}
+
+.button {
+    background-color: rgb(126, 240, 126);
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    height: fit-content;
+    padding: 2px 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+form input {
+    height: 20px;
+    width: 200px;
+}
+
+form input::placeholder {
+    color: rgb(216, 211, 211);
+}
+
+textarea::placeholder {
+    color: rgb(192, 190, 190);
+}
+
+.button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.contact-body h1 {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.contact-body p {
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-body hr {
+    margin-top: 40px;
+    width: 20%;
+}
+
+
+
+
+
+@keyframes slideInFromRight {
+    0% {
+        right: -300px;
+    }
+
+    100% {
+        right: 1500px;
+    }
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+nav p {
+    color: white;
+}
+
+.content h2 {
+    text-align: center;
+    font-family: 'Edu TAS Beginner', cursive;
+}
